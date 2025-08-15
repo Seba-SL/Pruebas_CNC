@@ -23,24 +23,6 @@ void setup() {
 }
 
 void loop() {
-  // Motor X
-  digitalWrite(DirX, LOW); // Enables the motor to move in a particular direction
-  // Makes 200 pulses for making one full cycle rotation
-  for(int x = 0; x < CANT_VUELTAS; x++) {
-    digitalWrite(StepX, HIGH); 
-    delayMicroseconds(700);    // by changing this time delay between the steps we can change the rotation speed
-    digitalWrite(StepX, LOW); 
-    delayMicroseconds(700); 
-  }
-  delay(1000); // One second delay
-  digitalWrite(DirX, HIGH);
-  for(int x = 0; x < CANT_VUELTAS; x++) {
-    digitalWrite(StepX, HIGH); 
-    delayMicroseconds(700);    // by changing this time delay between the steps we can change the rotation speed
-    digitalWrite(StepX, LOW); 
-    delayMicroseconds(700); 
-  }
-  delay(1000);
 
   // Motor Y
   digitalWrite(DirY, LOW); // Enables the motor to move in a particular direction
